@@ -1,6 +1,6 @@
 <template>
-  <div style="text-align: center; padding: 40px;">
+  <div class="container">
     <h1>Dashboard</h1>
-    <p>You can see this because you're logged in.</p>
+    <p>You are logged in and viewing protected content.</p>
   </div>
 </template>

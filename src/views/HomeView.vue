@@ -1,6 +1,6 @@
 <template>
-  <div style="text-align: center; padding: 40px;">
+  <div class="container">
     <h1>Welcome to the Home Page</h1>
-    <p>This is your Day 6 multi-page Vue app.</p>
+    <p>This is a clean and styled Vue app using Vue Router.</p>
   </div>
 </template>

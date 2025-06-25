@@ -1,12 +1,10 @@
 <template>
-  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <form @submit.prevent="login" style="border: 1px solid #ccc; padding: 30px; width: 300px;">
-      <h2 style="text-align: center;">Login</h2>
-      <input v-model="username" type="text" placeholder="Username" required
-             style="width: 100%; margin: 10px 0; padding: 8px;" />
-      <input v-model="password" type="password" placeholder="Password" required
-             style="width: 100%; margin: 10px 0; padding: 8px;" />
-      <button type="submit" style="width: 100%; padding: 10px; background-color: #005f99; color: white;">Login</button>
+  <div class="container" style="max-width: 400px;">
+    <h2>Login</h2>
+    <form @submit.prevent="login">
+      <input v-model="username" type="text" placeholder="Username" required />
+      <input v-model="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
     </form>
   </div>
 </template>
@@ -24,7 +22,7 @@ function login() {
     localStorage.setItem('loggedIn', 'true')
     router.push('/dashboard')
   } else {
-    alert('Please fill both fields')
+    alert('Please fill in both fields.')
   }
 }
 </script>

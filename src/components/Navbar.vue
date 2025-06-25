@@ -1,9 +1,13 @@
 <template>
-  <nav style="background-color: #005f99; padding: 10px;">
-    <router-link to="/" style="margin-right: 15px; color: white;">Home</router-link>
-    <router-link to="/about" style="margin-right: 15px; color: white;">About</router-link>
-    <router-link to="/dashboard" style="margin-right: 15px; color: white;">Dashboard</router-link>
-    <span v-if="isLoggedIn" @click="logout" style="cursor: pointer; color: red;">Logout</span>
+  <nav>
+    <div>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/dashboard">Dashboard</router-link>
+    </div>
+    <div>
+      <span v-if="isLoggedIn" class="logout" @click="logout">Logout</span>
+    </div>
   </nav>
 </template>
 
