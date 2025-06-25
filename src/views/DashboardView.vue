@@ -1,6 +1,6 @@
 <template>
-  <div>
+  <div style="text-align: center; padding: 40px;">
     <h1>Dashboard</h1>
-    <p>Only accessible if logged in.</p>
+    <p>You can see this because you're logged in.</p>
   </div>
 </template>
